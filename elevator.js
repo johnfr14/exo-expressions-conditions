@@ -1,4 +1,4 @@
-currentFloor =7
+currentFloor = 6
 targetFloor = 3
 
 
