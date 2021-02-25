@@ -1,41 +1,47 @@
-currentFloor = 7
-targetFloor = 0
-time = 12
+currentFloor =7
+targetFloor = 3
 
-//currentFloor = targetFloor ? console.log('vous êtes déjà à l\'étage') : 
 
-for (let ascensor = 0; ascensor != targetFloor; console.log(`Veuillez patienter l\'ascenseur est actuellement au ${ascensor}ème étage !\n`))  {
   switch (currentFloor){
     case 7:
-      currentFloor = targetFloor ? console.log(`vous voilà arrivé au ${targetFloor}ème étage, passez une bonne ${time < 6 || time > 18 ? 'soirée' : 'journée'}`) :
-      ascensor = currentFloor ? console.log(`Vous avez choisi d'aller au ${targetFloor}ème étage`) currentFloor = targetFloor : ascensor++
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 7 et desirez descendre au ${targetFloor}ème`) : console.log('Vous y êtes déjà...')
       break
     case 6:
-      ++nbA
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 6 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case 5:
-      ++nbI
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 5 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case 4:
-      ++nbO
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 4 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case 3:
-      ++nbU
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 3 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case 2:
-      ++nbY
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 2 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
+      break
     case 1:
-      ++nbO
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 1 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case 0:
-      ++nbU
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage 0 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case -1:
-      ++nbY
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage -1 et desirez ${targetFloor < currentFloor ? 'descendre' : 'monter'} au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     case -2:
+      currentFloor != targetFloor ? console.log(`vous vous trouvez actuellement à l\'étage -2 et desirez monter au ${targetFloor}ème`) :
+      console.log('Vous y êtes déjà...')
       break
     default:
   }
-}
-console.log(`vous voilà arrivé au ${targetFloor}ème étage, passez une bonne ${time < 6 || > 18 ? 'soirée' : 'journée'}`)
+  console.log(`Vous voilà arrivé au ${targetFloor} étage${targetFloor < -1 || targetFloor > 1 ? 's' : ''}`)
