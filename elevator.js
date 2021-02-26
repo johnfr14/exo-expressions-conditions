@@ -1,5 +1,5 @@
 currentFloor = 6
-targetFloor = 3
+targetFloor = 5
 
 
   switch (currentFloor){
@@ -44,4 +44,4 @@ targetFloor = 3
       break
     default:
   }
-  console.log(`Vous voilà arrivé au ${targetFloor} étage${targetFloor < -1 || targetFloor > 1 ? 's' : ''}`)
+  currentFloor != targetFloor ? console.log(`Vous voilà arrivé au ${targetFloor} étage${targetFloor < -1 || targetFloor > 1 ? 's' : ''}`) : ""
